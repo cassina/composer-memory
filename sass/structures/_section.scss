@@ -1,0 +1,12 @@
+// *************************************
+//
+//   Section
+//   -> All sections styles
+//
+// *************************************
+.navbar--fix + .section {
+    margin-top: 50px;
+}
+.section {
+    height: 100%;
+}

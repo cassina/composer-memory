@@ -1,0 +1,33 @@
+// *************************************
+//
+//   Footer
+//   -> Footer bar styles
+//
+// *************************************
+.footer {
+  height: $footer-height;
+  background-color: $footer-background-color;
+
+  // -------------------------------------
+  //   Modifiers
+  // -------------------------------------
+  // TODO maybe change the sintax
+  &--fix {
+    position: $footer-position;
+    bottom: 0;
+  }
+
+  // -------------------------------------
+  //   Scaffolding
+  // -------------------------------------
+  .footer-links {
+    // TODO refactor
+    @include flex();
+    @include justify-content(space-around);
+
+    > * {
+      padding: $b-space-xs;
+      font-weight: $navbar-links-weight;
+    }
+  }
+}

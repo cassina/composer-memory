@@ -1,0 +1,33 @@
+// *************************************
+//
+//   Helpers
+//   ->
+//
+// *************************************
+@mixin box-shadow($box-shadow: $b-boxShadow) {
+  -webkit-box-shadow: $box-shadow;
+  -moz-box-shadow: $box-shadow;
+  box-shadow: $box-shadow;
+}
+
+@mixin flex($align-items: $b-alignItems) {
+  @include prefixer(box-sizing, $b-boxSizing, $b-prefixes);
+  @include display($b-flex);
+  @include align-items($align-items);
+
+  height: 100%;
+  padding: $b-space-s;
+}
+
+@mixin center-vh() {
+    position: relative;
+
+    .vh-child {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    }
+}

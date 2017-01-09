@@ -1,0 +1,50 @@
+// *************************************
+//
+//   Navbar
+//   -> Navigation bar styles
+//
+// *************************************
+.navbar {
+  height: $navbar-height;
+  background-color: $navbar-background-color;
+
+  // -------------------------------------
+  //   Modifiers
+  // -------------------------------------
+  // TODO maybe change the sintax
+  &--fix {
+    @include box-shadow($navbar-shadow-fixed);
+
+    position: $navbar-position;
+    top: 0;
+  }
+
+  // -------------------------------------
+  //   Scaffolding
+  // -------------------------------------
+  & .nav-links {
+    @include flex();
+
+    > * {
+      padding: $b-space-xs;
+      font-weight: $navbar-links-weight;
+    }
+
+    &--left {
+      float: left;
+    }
+
+    &--right {
+      @include justify-content(flex-end);
+
+      .nav-button {
+        &.mdi {
+          font-size: $b-fontSize-l;
+          color: $navbar-button-icon-color;
+          padding: 0 $b-space-s 0 $b-space-s;
+        }
+      }
+    }
+  }
+}
+

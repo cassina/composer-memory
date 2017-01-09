@@ -1,0 +1,101 @@
+// *************************************
+//
+//   Config
+//   -> All variables go here
+//
+// *************************************
+// -------------------------------------
+//   Colors
+// -------------------------------------
+
+// ----- Palette ----- //
+$black:      #000000;
+$white:      #FFFFFF;
+$gray:       #343434;
+$blue:  #007BB6;
+$bayoux:     #4D6378;
+$red:        #D9534F;
+$green:      #409F56;
+$amber: #CDDC39;
+
+// ----- Base ----- //
+
+$c-background-invert: $white;
+$c-background: $bayoux;
+$c-highlight: $amber;
+$c-link: $white;
+$c-text: $black;
+$c-text-invert: $white;
+$c-text-highlight: $c-highlight;
+
+  // ----- Components ----- //
+
+  // Example: $row--a-background: $c-highlight
+
+  // ----- Structures ----- //
+
+  // Example: $dropdown-link-color: $c-subdue
+
+  // -------------------------------------
+  //   Base
+  // -------------------------------------
+$b-prefixes: webkit moz spec;
+
+  // ----- Borders & Box Shadow ----- //
+
+$b-borderRadius: 2px;
+$b-boxShadow: 0px 1px 10px 1px rgba(0,0,0,0.75);
+
+  // ----- Typography ----- //
+$mdi-font-path: "../../bower_components/mdi/fonts" !default;
+$b-fontFamily: 'Roboto', sans-serif;
+$b-fontSize: 1rem;
+$b-fontSize-xs: $b-fontSize * 0.25;
+$b-fontSize-s: $b-fontSize * 0.5;
+$b-fontSize-l: $b-fontSize * 2;
+$b-fontSize-xl: $b-fontSize * 4;
+
+  // ----- Sizing ----- //
+
+$b-space: 20px;
+$b-space-xs: $b-space * 0.25;
+$b-space-s: $b-space * 0.5;
+
+  // ----- Flex Box ----- //
+$b-flex: flex;
+$b-alignItems: center;
+$b-boxSizing: border-box;
+  // -------------------------------------
+  //   Components
+  // -------------------------------------
+
+  // ----- Grid ----- //
+
+$g-s: 480px;
+$g-m: 800px;
+$g-l: 1024px;
+
+  // ----- Grid ----- //
+
+$button-bg-color: $c-background;
+$button-text-transform: uppercase;
+
+// -------------------------------------
+//   Structures
+// -------------------------------------
+
+// ----- Dropdown ----- //
+
+// navbar
+$navbar-background-color: $bayoux;
+$navbar-position: fixed;
+$navbar-height: 50px;
+$navbar-shadow-fixed: $b-boxShadow;
+$navbar-links-color: $c-text-invert;
+$navbar-links-weight: 300;
+$navbar-button-icon-color: $c-highlight;
+
+// footer
+$footer-background-color: $gray;
+$footer-position: fixed;
+$footer-height: 50px;

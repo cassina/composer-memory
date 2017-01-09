@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Composer Memory</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/screen.css') }}">
+    </head>
+    <body>
+        <header class="navbar navbar--fix">
+            <nav>
+{#                Navigation bar links #}
+                <ul class="nav-links nav-links--left">
+                    <li>
+                        <a href="{{ url_for('index') }}">
+                            <i class="mdi mdi-function"></i>
+                            Composer Memory</a></li>
+
+                    <li>
+                        <a href="#">
+                            <i class="mdi mdi-ghost"></i>
+                            Scores</a></li>
+                </ul>
+
+{#                Navigation bar button #}
+                <ul class="nav-links nav-links--right">
+                    <li>
+                        <a href="#footer">
+                            <button role="button"
+                                    class="nav-button mdi mdi-play"></button></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="section vh-parent" data-names="{{ names }}">
+{#            Just to generate sample content :) #}
+{#            {% for i in range (0, 50) %}#}
+{#                <img src="{{ url_for('static', filename='img/bach.jpg') }}" alt="Johann Sebastian Bach, ">#}
+{#            {% endfor %}#}
+            <button role="button"
+                    class="button vh-child">new game</button>
+        </section>
+
+        <footer id="footer" class="footer">
+            <ul class="footer-links">
+                <li>
+                    <a href="https://github.com/cassina/composer-memory" target="_blank">about</a></li>
+
+            </ul>
+        </footer>
+    </body>
+</html>
